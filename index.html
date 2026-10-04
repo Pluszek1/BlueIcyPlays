@@ -683,7 +683,6 @@ function isRegularDropDay(){
 function isDropDay(){
   return MANUAL_FORCE_OPEN || isRegularDropDay();
 }
-  
   function nextDropDate(){
     const now = new Date();
     const daysUntilSunday = (7 - now.getDay()) % 7 || 7;
